@@ -1,0 +1,6 @@
+# the next files and directories must be ignored
+/bin
+/obj
+**/*.pdb
+**/*.bat
+

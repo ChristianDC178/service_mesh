@@ -1,0 +1,72 @@
+﻿using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Hosting;
+
+namespace ServiceMesh.Accounts
+{
+
+    class Program
+    {
+        static void Main(string[] args)
+<<<<<<< HEAD
+        {
+
+            var webHost = Host.CreateDefaultBuilder(args)
+                 .ConfigureWebHostDefaults(webBuilder =>
+                 {
+
+                     webBuilder.ConfigureKestrel((options) =>
+                     {
+                         options.ListenLocalhost(9391);
+                     });
+
+                     webBuilder.UseStartup<Startup>();
+                 });
+
+            webHost.Build().Run();
+=======
+        {
+
+            //try
+            //{
+
+            //    var account = new Account()
+            //    {
+            //        EntityId = Guid.NewGuid(),
+            //        Description = "Christian DC",
+            //        CreatedOn = DateTime.Now
+            //    };
+
+            //    var serviceContext = new ServiceContext();
+
+            //    var unitOfWoprk = new ServiceUOW(serviceContext);
+
+            //    unitOfWoprk.AccountRepository.Create(account);
+
+            //    unitOfWoprk.SaveChanges();
+
+            //}
+            //catch (Exception ex)
+            //{
+            //    Console.WriteLine(ex.Message);
+            //}
+
+
+            //Console.ReadKey();
+
+            Host.CreateDefaultBuilder(args)
+            .ConfigureWebHostDefaults(webBuilder =>
+            {
+                webBuilder.UseStartup<Startup>();
+                //webBuilder.ConfigureKestrel((kestrelOptions) =>
+                //{
+                //    kestrelOptions.ListenLocalhost(8090);
+                //});
+            }).Build()
+            .Run();
+
+>>>>>>> 77bb53a4b517f5e8f89d5dc7fbba125f1cc4c6eb
+        }
+
+
+    }
+}

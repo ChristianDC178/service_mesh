@@ -1,0 +1,16 @@
+<<<<<<< HEAD
+﻿{
+  "Kestrel": {
+    "Limits": {
+      "MaxConcurrentConnections": 100,
+      "MaxConcurrentUpgradedConnections": 100
+    },
+    "DisableStringReuse": true
+  },
+  "MyKey":  "My key default value"
+}
+=======
+{
+
+}
+>>>>>>> 77bb53a4b517f5e8f89d5dc7fbba125f1cc4c6eb

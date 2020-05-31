@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+option csharp_namespace = "ServiceMesh.Accounts.Grpc";
+
+service AccountsService {
+
+	rpc CreateAccount(AccountModel) returns(Response) { }
+
+}
+
+message AccountModel {
+    string FirstName = 1;
+    string LastName = 2;
+}
+
+message Response {
+    string accountId = 1;
+}
+
+
